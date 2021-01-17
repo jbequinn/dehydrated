@@ -1966,6 +1966,8 @@ command_env() {
 
 # Main method (parses script arguments and calls command_* methods)
 main() {
+  echo ""
+  echo "$(date -u +"%Y-%m-%dT%H:%M:%SZ") Process starting..."
   exit_with_errorcode=0
   skip_exit_hook=no
   COMMAND=""
